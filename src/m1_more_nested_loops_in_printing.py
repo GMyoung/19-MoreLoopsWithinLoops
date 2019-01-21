@@ -4,8 +4,8 @@ in the context of PRINTING on the CONSOLE.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
          Mark Hays, Amanda Stouder, Aaron Wilkin, their colleagues,
-         and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         and Yicheng Yang.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -39,6 +39,14 @@ def run_test_triangle_right_justified():
 
 
 def triangle_right_justified(r):
+    for j in range(r):
+        LOL = j+1
+        for k in range(r-j):
+            print(' ',end='')
+        for k in range(LOL):
+            print(k+1,end='')
+        print()
+
     """
     Prints a triangle of numbers, with r rows.
     It looks the same as a previous example, but right-justified.
@@ -56,7 +64,7 @@ def triangle_right_justified(r):
     For purposes of "lining up", assume r is a single digit.
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # DONE: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # HINT: Do the following problem FIRST, then convert x's to spaces:
@@ -97,6 +105,13 @@ def run_test_triangle_upside_down():
 
 
 def triangle_upside_down(r):
+    for j in range(r):
+        LOL = j+1
+        for k in range(LOL):
+            print(' ', end='')
+        for k in range(r-j):
+            print(k + 1, end='')
+        print()
     """
     Prints a triangle of numbers, with r rows.
     It looks the same as the previous problem,
@@ -110,7 +125,7 @@ def triangle_upside_down(r):
     For purposes of "lining up", assume r is a single digit.
     """
     # -------------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # DONE: 3. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -141,6 +156,19 @@ def run_test_vee():
 
 
 def vee(r):
+    for j in range(r):
+        LOL = r - j
+        for q in range(j + 1):
+            print(' ',end='')
+        for w in range(LOL):
+            print(w+1,end='')
+        print('-',end='')
+        for k in range(LOL):
+            print(r-j -k,end='')
+        for b in range(j + 1):
+            print(' ',end='')
+        print()
+
     """
     Prints a "V" of numbers, with r rows.
     It looks like this example, when r = 5:
